@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Links</title>
+
+    <style>
+        /* Any link will be in green color */
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        /* Visited link will turn pink color */
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        /* Link turn red color When mouse placed over link */
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        /* Link turn yellow during using or in active state */
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <a> tag defines a hyperlink -->
+    <h4>HTML links are hyperlink</h4>
+    <!-- These hyperlinks are used to contain link of other documents or pages where we can jump by clicking on the link.-->
+    <h4>If we <a href="http://google.com">click here</a> then google home page will come.</h4>
+    <h4>HTML link syntax:</h4>
+    <pre>
+        < a href="url"> link text < /a >
+
+        < a href="http://google.com"> Google < /a >
+    </pre>
+    <!-- link text part will be visible to the reader -->
+    <!-- The most important attribute of the < a > element is the href attribute, which indicates the link's destination -->
+
+    <h4>Target (_blank,_self,_parent,_top) attribute specifies where to open the linked document</h4>
+
+    <!-- target="_blank" Open in a new window or tab -->
+    <a href="https://www.google.com/" target="_blank">Open in a new window or tab</a><br>
+
+    <!-- target="_self" Open in a new window or tab -->
+    <a href="https://www.google.com/" target="_self">Open in current/same window or tab</a><br>
+
+    <!-- target="_parent" Open in a new window or tab -->
+    <a href="https://www.google.com/" target="_parent">Open in the parent frame</a><br>
+
+    <!-- target="_top" Open in a new window or tab -->
+    <a href="https://www.google.com/" target="_top">Open in the full body of the window</a><br>
+
+    <h3>Absolute URL</h3>
+    <!-- Absolute URL link pages with a full web address -->
+    <pre>
+        < a href="https://www.google.com/"> Google < /a >
+    </pre>
+
+    <h3>Relative URL</h3>
+    <!-- Relative URL link pages within same website -->
+    <pre>
+        < a href="/files/default.asp"> Download < /a >
+    </pre>
+
+    <!-- Put <img> tag inside <a> tag to use as a link -->
+    <a href="https://www.google.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="HTML tutorial">
+    </a><br>
+
+    <!-- href="mailto:" is used to create a link opens in email program -->
+    <a href="mailto:someone@example.com">Send email</a><br>
+
+    <!-- JavaScript code is used to use HTML button as a link -->
+    <button onclick="document.location='default.asp'">HTML Tutorial</button><br>
+
+    <!-- Simply use title attribute to specify extra info as a link title -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+</body>
+</html>
