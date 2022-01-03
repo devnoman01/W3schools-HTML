@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Background</title>
+</head>
+<body>
+
+    <!-- Simply style is used to set bg color -->
+    <div style="background-color: peru;">
+        <h2>This is a section with background color</h2>
+    </div>
+
+    <div style="background-image: url('https://www.w3schools.com/w3images/cellphone.jpg');">
+        <h2>This is a section with background image</h2>
+    </div>
+
+    <!-- If bg image is smaller then it will repeat whole block -->
+    <div style="background-image: url('https://www.w3schools.com/html/example_img_girl.jpg');">
+        <h2>This is called background repeat</h2>
+        <h2>This is called background repeat</h2>
+        <h2>This is called background repeat</h2>
+    </div>
+
+    <!-- To prevent bg repeat, no-repeat value is used -->
+    <div style="background-image: url('https://www.w3schools.com/html/example_img_girl.jpg');background-repeat: no-repeat;">
+        <h2>There is no</h2>
+        <h2>background</h2>
+        <h2>repeat</h2>
+    </div>
+
+    <!-- "background-size:cover" is used to cover entire element with bg-image -->
+    <!-- "background-attachment:fixed" is used to keep entire element always covered -->
+    <div style="background-image: url('https://www.w3schools.com/html/example_img_girl.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;" >
+        <h2>This section have fixed cover background-image fixed cover background-image </h2>
+        <h2>This section have fixed cover background-image fixed cover background-image </h2>
+    </div>
+
+    <!-- background-size: 100% 100% is used to make the bg stretched -->
+    <div style="background-image: url('https://www.w3schools.com/html/example_img_girl.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+        <h2>This section have stretched background</h2>
+        <h2>This section have stretched background</h2>
+        <h2>This section have stretched background</h2>
+    </div>
+    
+</body>
+</html>
