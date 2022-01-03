@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML CSS</title>
+    <style>
+        h4{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>CSS - Cascading Style Sheets is used to format the layout of a webpage</h2>
+    <h2>CSS can be added to HTML document in 3 way:</h3>
+
+    <!-- Inline CSS uses style attribute inside the tag -->
+    <h3 style="color:forestgreen;">Inline - attribute used inside the tag</h3>
+    <pre>< h1 style="color:forestgreen;">A Blue Heading< /h1></pre>
+    <!-- Internal CSS uses style tag inside head tag -->
+    <h4>Internal - using style attribute inside head tag</h4>
+    <pre>
+        < head >
+            < style >
+                h4{color: orangered;}
+            < /style >
+        < /head >
+        < body >
+            < h4 > A Orangered Heading < /h4 >
+        < /body >
+    </pre>
+
+
+    <!-- In external CSS, <link> tag is used to link the HTML file is with a css file having ".css" extension. -->
+    <!--
+    <link rel="stylesheet" href="styles.css">
+    -->
+    <h3>External - HTML file is linked with a file having .css extension</h3>
+    <h5>Link tag using format:- (applied when stylesheet located in same folder)</h5>
+    <pre>< link rel="stylesheet" href="styles.css" ></pre>
+    
+    <h5>External style sheets can be referenced with a full URL</h5>
+    <pre>< link rel="stylesheet" href="https://www.w3schools.com/html/styles.css" ></pre>
+
+</body>
+</html>
