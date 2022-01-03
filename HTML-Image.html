@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Images</title>
+</head>
+<body>
+    
+    <!-- <img> tag is used to embed an image in a web page -->
+    <!-- <img> tag is empty, with attributes, and don't have closing tag -->
+    <!-- Only image name is used if image is in same folder -->
+    <img src="logo.png" alt="main logo"><br><br>
+    <!-- src > specifies the path to image -->
+    <!-- alt > specifies an alternate text for image -->
+
+    <!-- Folder name must be included if image is in a sub-folder -->
+    <img src="/images/html5.gif" alt="HTML5 Icon"><br><br>
+
+    <!-- An absolute URL must be specified for image from other server -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="w3schools-logo"><br>
+ 
+    <!-- style attribute used to set width and height of an image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="w3schools-logo" style="width:60px;height:60px;">
+    <br>
+
+    <!-- width and height attribute also used to set size of an image -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="w3schools-logo" width="60px" height="60px"><br>
+
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="w3schools-logo" style="float:right;width:60px;height:60px;">The image will float to the right of the text.</p>
+        
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Logo03.gif" alt="w3schools-logo" style="float:left;width:60px;height:60px;">The image will float to the left of the text.</p>
+    <br><br>
+
+    <!-- An interesting method is Image Map -->
+    <h2>Image Maps</h2>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.w3schools.com/html/coffee.htm">
+    </map>
+    <br><br>
+
+    <!-- A special tag is <picture> tag -->
+        <h2>Picture Tag</h2>
+    <picture>
+        <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+        <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto">
+    </picture>
+
+</body>
+</html>
