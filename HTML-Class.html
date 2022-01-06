@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Class</title>
+    <style>
+        /* classname is used with a . (dot) in css */
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>We apply class method to apply effect on multiple element</h2>
+    <!-- all element having city class will have same property -->
+    <!-- class name is case sensitive -->
+    <!-- class is declared after tag with space -->
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+      
+    <!-- separate the class names with a space to define multiple classes -->
+    <div class="city main">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+      
+    <div class="city">
+        <!-- different element can have same class -->
+        <h2 class="text">Tokyo</h2>
+        <p class="text">Tokyo is the capital of Japan.</p>
+    </div>
+</body>
+</html>
